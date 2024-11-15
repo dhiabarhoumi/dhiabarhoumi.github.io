@@ -1,0 +1,261 @@
+/* Base style for experience items */
+.experience {
+    padding: 20px ;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    opacity: 0; /* Start invisible */
+    transform: translateY(50%); /* Start from below */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition for opacity and transform */
+}
+.content{
+    padding: 20px;
+}
+
+/* When in-view class is added, apply animation */
+.experience.in-view {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Left side experience styling */
+.experience.left {
+    left: 0;
+}
+
+/* Right side experience styling */
+.experience.right {
+    left: 50%;
+    margin-left: 20px;
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #d3d3d3;
+}
+
+/* Dot at timeline position */
+.experience.left .content::after,
+.experience.right .content::after {
+    content: '';
+    position:fixed;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(70, 117, 142, 0.6);
+}
+
+/* Positioning for dot */
+.experience.left .content::after {
+    left: 100%;
+    margin-left: -2px;
+}
+
+.experience.right .content::after {
+    right: 100%;
+    margin-right: 17px;
+}
+
+.experience.left .content {
+    margin-left: calc(10px + 5px);
+}
+
+.experience.right .content {
+    margin-left: calc(-10px - 5px);
+}
+
+/* Hover effect */
+.experience:hover .content {
+    background-color: rgba(197, 196, 196, 0.2);
+    transform: scale(1.02); /* Slight zoom effect */
+    transition: background-color 0.1s ease 0.15s, transform 0.3s ease; /* Delay background-color transition and add transform transition */
+}
+
+
+/* Dot color on hover */
+.experience.right:hover .content::after {
+    transition: background-color 0.1s ease 0.1s ; /* Delay dot color transition by 1 second */
+    opacity: 0; /* Fade out the dots */
+    transition: opacity 0.8s ease; /* Smooth transition for opacity */
+    transition: opacity 0s ease; /* Smooth transition for opacity */
+
+
+}
+.experience.left:hover .content::after {
+    transition: background-color 0.1s ease 0.1s ; /* Delay dot color transition by 1 second */
+    opacity: 0; /* Fade out the dots */
+    transition: opacity 0s ease; /* Smooth transition for opacity */
+
+
+}
+
+
+/* Role styling */
+.role-container {
+    display: flex;
+    align-items: center;
+    margin-bottom:0;
+    margin-bottom: 0;
+}
+    
+.role {
+    font-size:20px;
+    margin-left: 5px; /* Space between the icon and the role text */
+    color: rgb(28, 28, 28);
+    font-weight: bold;
+    margin-top: 0;
+
+}
+/* GitHub icon styling */
+.github-icon {
+    color: #414141;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-bottom: 17px;
+}
+
+/* Hover effect on GitHub icon */
+.github-icon:hover {
+    color: #4078c0; /* GitHub blue */
+}
+/* Company styling */
+.company {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 5px;}
+
+/* Project name styling */
+.project-name {
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Project type styling */
+.project-type {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+/* Location styling */
+.location {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.date_container{
+    font-size:0.9rem;
+    color: #666;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding-top: 2px;
+}
+
+/* Timeline title styling */
+.timeline-title {
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 40px 0;
+    z-index: 1;
+}
+
+.timeline-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 0px;
+    background-color: #d3d3d3;
+    z-index: -1;
+}
+
+.timeline-title span {
+    background-color: #fff;
+    padding: 25px 25px;
+}
+/* Mobile styling for experience items */
+@media (max-width: 768px) {
+    .experience {
+        width: 100%;
+        padding: 15px;
+        transform: translateY(20%);
+    }
+
+    .experience.left,
+    .experience.right {
+        left: 0;
+        margin-left: 32px;
+    }
+
+    /* Adjust content margin for mobile */
+    .experience.left .content,
+    .experience.right .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Mobile-friendly timeline styling */
+    .timeline::before {
+        left: 20px; /* Align timeline line to the left */
+    }
+
+    /* Positioning for dot on mobile */
+    .experience.left .content::after,
+    .experience.right .content::after {
+        left: -15px; /* Move dot closer to the left */
+        margin-left: 0;
+    }
+
+    /* Role and icon styling on mobile */
+    .role-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .role {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    /* Adjust GitHub icon margin */
+    .github-icon {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .location {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+}
