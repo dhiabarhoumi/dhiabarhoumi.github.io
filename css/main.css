@@ -225,7 +225,7 @@ img.avatar {
   left: 0;
   width: 100%;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(177, 177, 177, 0.75);
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);
 }
@@ -251,7 +251,7 @@ img.avatar {
 
 /* Portolio Caption */
 #bp_container .bp-xc {
-  background: #F6E05E !important;
+  background: #f6df5ec2 !important;
 }
 
 #bp_caption a {
