@@ -112,13 +112,13 @@ a.aboutme-b:hover {
 }
 
 .social-nav ul {
-  display: flex;
-  justify-content: center; /* Horizontally aligns icons */
-  align-items: center; /* Vertically centers icons */
-  gap: 20px; /* Adds space between icons */
-  list-style: none; /* Removes default bullet points */
-  padding: 0;
-  margin: 0;
+  display: flex; /* Makes items align horizontally */
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Ensures vertical alignment */
+  gap: 30px; /* Adds equal spacing between items */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  list-style: none; /* Removes bullet points */
 }
 
 
