@@ -472,7 +472,7 @@ footer a:not(.nav-link) {
   z-index: 9999;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff; /* Background color of the loading screen */
+  background-color: #aaaaaa; /* Background color of the loading screen */
   display: flex;
   justify-content: center;
   align-items: center;
