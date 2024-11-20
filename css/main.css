@@ -595,6 +595,22 @@ footer a:not(.nav-link) {
     margin-top: 8px; /* Further space above the button */
   }
 }
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  transform: scale(1.1);
+  background-color: #FFA500;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 @media screen and (max-width: 600px) {
   .certification-tooltip::after {
