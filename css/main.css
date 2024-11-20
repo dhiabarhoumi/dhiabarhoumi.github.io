@@ -111,7 +111,15 @@ a.aboutme-b:hover {
   
 }
 
-
+.social-nav ul {
+  display: flex;
+  justify-content: center; /* Horizontally aligns icons */
+  align-items: center; /* Vertically centers icons */
+  gap: 20px; /* Adds space between icons */
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+}
 
 
 .nav-link {
