@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This site serves as a platform to showcase my professional journey, skills, projects, certifications, and more. It reflects my passion for **Machine Learning**, **MLOps**, and **AI-driven innovations**. Feel free to explore!
 
-![Portfolio Preview](https://dhiabarhoumi.github.io/assets/preview-image.png) <!-- Replace this with an actual preview image or remove it -->
+![Portfolio Preview](https://dhiabarhoumi.github.io/images/preview.png) <!-- Replace this with an actual preview image or remove it -->
 
 ---
 
