@@ -143,6 +143,8 @@ a.aboutme-b:hover {
 /* Hero (intro) section */
 .intro-title {
   font-weight: 800;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 @-webkit-keyframes animateWave {
@@ -477,30 +479,33 @@ footer a:not(.nav-link) {
 /* Loader styles */
 #loader {
   position: fixed;
-  z-index: 9999;
-  width: 100vw;
-  height: 100vh;
-  background-color: #cfcfcf; /* Background color of the loading screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 #loader::after {
   content: "";
   width: 50px;
   height: 50px;
-  border: 6px solid #848383; /* Color of the spinner */
-  border-top-color: transparent;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid rgba(72, 110, 131, 0.6); /* Matching the hover color used in nav links */
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -749,4 +754,200 @@ footer a:not(.nav-link) {
 .timeline .role {
   margin-bottom: 10px;
   line-height: 1.4;
+}
+
+/* Typing animation styles */
+.typing-section {
+  min-height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.static-content {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 20px; /* Add left padding to move content right */
+}
+
+.typing-text {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+}
+
+.typing-text.typing {
+  animation: typing-custom 1.5s steps(30, end);
+}
+
+.typing-text.typing-complete {
+  border-right: none;
+  width: auto;
+}
+
+.typing-container {
+  visibility: hidden;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.typing-container.visible {
+  visibility: visible;
+}
+
+@keyframes typing-custom {
+  from { 
+    width: 0;
+  }
+  to { 
+    width: var(--text-width);
+  }
+}
+
+.typing-delay-1 {
+  animation-delay: 0s;
+}
+
+.typing-delay-2 {
+  animation-delay: 1.6s;
+}
+
+.typing-delay-3 {
+  animation-delay: 3.2s;
+}
+
+.typing-delay-4 {
+  animation-delay: 4.8s;
+}
+
+/* Additional styles for better text appearance */
+.lead {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Social nav styles */
+.social-nav {
+  margin-bottom: 5px; /* Reduced from 10px to bring download button even closer */
+}
+
+.social-nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin-left: 210px; /* Increased from 110px to move further right */
+  list-style: none;
+}
+
+.social-nav .nav-link {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Individual social icon animations */
+.social-nav .nav-link:nth-child(1) {
+  animation: fadeInIcon 0.5s ease forwards;
+  animation-delay: 5s; /* After typing ends */
+}
+
+.social-nav li:nth-child(2) .nav-link {
+  animation: fadeInIcon 0.5s ease forwards;
+  animation-delay: 5.2s; /* 0.2s after first icon */
+}
+
+.social-nav li:nth-child(3) .nav-link {
+  animation: fadeInIcon 0.5s ease forwards;
+  animation-delay: 5.4s; /* 0.2s after second icon */
+}
+
+@keyframes fadeInIcon {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-nav .nav-link:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+/* Static content positioning */
+.static-content {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 0;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Button styles */
+.btn-primary.hover-effect {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInButton 0.5s ease forwards;
+  animation-delay: 5.8s;
+  margin-left: 210px; /* Match the social icons new margin */
+  margin-top: 0px; /* Reduced from 5px to bring closer to icons */
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary.hover-effect:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-nav ul, 
+  .btn-primary.hover-effect {
+    margin-left: 160px; /* Adjusted for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .social-nav ul,
+  .btn-primary.hover-effect {
+    margin-left: 120px; /* Adjusted for small screens */
+  }
+}
+
+/* Container styles */
+.mt-5 {
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .typing-section {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-section {
+    min-height: 160px;
+  }
 }

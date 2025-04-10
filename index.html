@@ -67,59 +67,52 @@
               <!--<div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"/></div>-->
               <div class="col-lg-6 p-2"><img class="img-scale-fade-in" src="images/pic4.png" alt="hello" height="300" width="300" /></div>
               
-              <div class="col-lg-6" style="display: flex;align-items: center;">
+              <div class="col-lg-6" style="display: flex; flex-direction: column;">
                 <div class="mt-5">
-                  <p class="lead text-uppercase mb-1">Hello there!</p>
-                  <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I'm Dhieddine BARHOUMI</h4>
-                  <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100"> - Machine Learning Engineer<br> - MLOps Enthusiast </p>
-                  <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
-                    <nav role="navigation">
-                      <ul class="nav justify-content-left">
-                      <!--
-                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.behance.net/templateflip"
-                            title="Behance"><i class="fab fa-behance"></i><span
-                              class="menu-title sr-only">Behance</span></a></li>
-                        -->
-                        <ul class="nav justify-content-center">
-                          <li class="nav-item">
-                              <a class="nav-link" href="https://www.linkedin.com/in/barhoumi-dhieddine/" title="LinkedIn" target="_blank">
-                                  <i class="fab fa-linkedin fa-lg"></i>
-                                  <span class="menu-title sr-only">LinkedIn</span>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="https://github.com/dhiabarhoumi" title="GitHub" target="_blank">
-                                  <i class="fab fa-github fa-lg"></i>
-                                  <span class="menu-title sr-only">GitHub</span>
-                              </a>
-                          </li>
-                          <!-- <li class="nav-item">
-                            <a class="nav-link" href="https://wa.me/21654157042" title="WhatsApp" target="_blank">
-                                <i class="fab fa-whatsapp fa-lg"></i>
-                                <span class="menu-title sr-only">WhatsApp</span>
-                            </a>
-                        </li> -->
-                        <li class="nav-item">
-                          <a class="nav-link" href="mailto:dhieddine.barhoumi@gmail.com" title="Email" target="_blank">
-                            <i class="fas fa-envelope fa-lg"></i>
-                            <span class="menu-title sr-only">Email</span>
-                          </a>
-                        </li>
-                        
-                      </ul>
-                      
-                    </nav>
+                  <div class="typing-section">
+                    <div class="typing-container" id="text1">
+                      <p class="lead text-uppercase mb-1 typing-text typing-delay-1">HELLO THERE!</p>
+                    </div>
+                    <div class="typing-container" id="text2">
+                      <h1 class="intro-title marker typing-text typing-delay-2" style="margin-top: 20px;">I'm Dhieddine BARHOUMI</h1>
+                    </div>
+                    <div class="typing-container" id="text3">
+                      <p class="lead fw-normal typing-text typing-delay-3" style="margin-top: 20px;">Machine Learning Engineer</p>
+                    </div>
+                    <div class="typing-container" id="text4">
+                      <p class="lead fw-normal typing-text typing-delay-4" style="margin-top: 20px;">MLOps Enthusiast</p>
+                    </div>
                   </div>
-                        <div style="text-align: center;">
-                          <a class="btn btn-primary shadow-sm mt-1 hover-effect" href="./resume/DHIEDDINE_BARHOUMI_RESUME.pdf" target="_blank">Download Resume</a>
-                      </div>
-                      
+                  
+                  <div class="static-content">
+                    <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+                      <nav role="navigation">
+                        <ul class="nav justify-content-left">
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/barhoumi-dhieddine/" title="LinkedIn" target="_blank">
+                              <i class="fab fa-linkedin fa-lg"></i>
+                              <span class="menu-title sr-only">LinkedIn</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/dhiabarhoumi" title="GitHub" target="_blank">
+                              <i class="fab fa-github fa-lg"></i>
+                              <span class="menu-title sr-only">GitHub</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="mailto:dhieddine.barhoumi@gmail.com" title="Email" target="_blank">
+                              <i class="fas fa-envelope fa-lg"></i>
+                              <span class="menu-title sr-only">Email</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div style="margin-top: 20px;">
+                      <a class="btn btn-primary shadow-sm mt-1 hover-effect" href="./resume/DHIEDDINE_BARHOUMI_RESUME.pdf" target="_blank">Download Resume</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -827,7 +820,59 @@
   <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
   <script src="./scripts/aos.min.js?ver=1.2.0"></script>
   <script src="./scripts/main.js?ver=1.2.0"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Function to calculate text width
+      function getTextWidth(element) {
+          // Create a temporary span with the same styling
+          const temp = document.createElement('span');
+          temp.style.visibility = 'hidden';
+          temp.style.whiteSpace = 'nowrap';
+          temp.style.position = 'absolute';
+          temp.style.font = window.getComputedStyle(element).font;
+          temp.textContent = element.textContent;
+          document.body.appendChild(temp);
+          
+          const width = temp.offsetWidth;
+          document.body.removeChild(temp);
+          return width;
+      }
 
+      // Function to start typing animation sequence
+      function startTypingAnimation() {
+          const containers = [
+              document.getElementById('text1'),
+              document.getElementById('text2'),
+              document.getElementById('text3'),
+              document.getElementById('text4')
+          ];
+          
+          const delays = [0, 1600, 3200, 4800];
+          const typingDuration = 1500;
+          
+          containers.forEach((container, index) => {
+              const typingElement = container.querySelector('.typing-text');
+              const textWidth = getTextWidth(typingElement);
+              
+              // Set the custom property for the text width
+              typingElement.style.setProperty('--text-width', `${textWidth}px`);
+              
+              setTimeout(() => {
+                  container.classList.add('visible');
+                  typingElement.classList.add('typing');
+                  
+                  // Add typing-complete class when animation ends
+                  setTimeout(() => {
+                      typingElement.classList.add('typing-complete');
+                  }, typingDuration);
+              }, delays[index]);
+          });
+      }
+
+      // Start the animation sequence
+      startTypingAnimation();
+  });
+  </script>
 </body>
 
 </html>
