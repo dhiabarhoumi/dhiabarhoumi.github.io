@@ -779,7 +779,7 @@ footer a:not(.nav-link) {
 }
 
 .typing-text.typing {
-  animation: typing-custom 1.5s steps(30, end);
+  animation: typing-custom 0.8s steps(30, end);
 }
 
 .typing-text.typing-complete {
@@ -853,17 +853,17 @@ footer a:not(.nav-link) {
 /* Individual social icon animations */
 .social-nav .nav-link:nth-child(1) {
   animation: fadeInIcon 0.5s ease forwards;
-  animation-delay: 6.3s; /* Start after last typing animation (4.8s + 1.5s typing duration) */
+  animation-delay: 5s; /* After typing ends */
 }
 
 .social-nav li:nth-child(2) .nav-link {
   animation: fadeInIcon 0.5s ease forwards;
-  animation-delay: 6.5s; /* 0.2s after first icon */
+  animation-delay: 5.2s; /* 0.2s after first icon */
 }
 
 .social-nav li:nth-child(3) .nav-link {
   animation: fadeInIcon 0.5s ease forwards;
-  animation-delay: 6.7s; /* 0.2s after second icon */
+  animation-delay: 5.4s; /* 0.2s after second icon */
 }
 
 @keyframes fadeInIcon {
@@ -898,9 +898,9 @@ footer a:not(.nav-link) {
   opacity: 0;
   transform: translateY(10px);
   animation: fadeInButton 0.5s ease forwards;
-  animation-delay: 7s; /* After all social icons have appeared */
-  margin-left: 210px;
-  margin-top: 0px;
+  animation-delay: 5.8s;
+  margin-left: 210px; /* Match the social icons new margin */
+  margin-top: 0px; /* Reduced from 5px to bring closer to icons */
 }
 
 @keyframes fadeInButton {
