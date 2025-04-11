@@ -124,7 +124,7 @@ a.aboutme-b:hover {
 
 .nav-link {
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: rgba(0, 0, 0, 0.9) !important;
 
 }
 
@@ -137,7 +137,7 @@ a.aboutme-b:hover {
 .nav-link:hover,
 .nav-link:focus,
 .active .nav-link {
-  color: rgba(72, 110, 131, 0.6) !important;
+  color: rgba(50, 80, 100, 0.8) !important;
 }
 
 /* Hero (intro) section */
@@ -165,17 +165,86 @@ a.aboutme-b:hover {
   }
 }
 
-.wave-bg {
-  display: block;
-  height: 220px;
+.wave-container {
+  position: relative;
   width: 100%;
-  min-width: 600px;
-  transform-origin: top;
-  -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-          animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-  background-image: url("../images/wave-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: -7px;
+  background: transparent;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.wave1 {
+  animation: moveWave1 15s linear infinite;
+}
+
+.wave2 {
+  animation: moveWave2 10s linear infinite;
+}
+
+.wave3 {
+  animation: moveWave3 8s linear infinite;
+}
+
+@keyframes moveWave1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveWave2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(35px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveWave3 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .wave-container {
+    height: 100px;
+  }
+  .waves {
+    height: 100px;
+  }
+}
+
+.cover {
+  position: relative;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  overflow: hidden;
+  padding-bottom: 200px; /* Increased padding to move wave lower */
 }
 
 img.avatar {
@@ -1244,4 +1313,57 @@ footer a:not(.nav-link) {
 
 .social-links .btn:hover::after {
     transform: scaleY(1);
+}
+
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 180px; /* Increased height for a more prominent wave */
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+    filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.05));
+    transition: all 0.3s ease;
+    animation: waveFlow 8s ease-in-out infinite;
+}
+
+@keyframes waveFlow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .cover {
+        padding-bottom: 130px; /* Adjusted for tablets */
+    }
+    .custom-shape-divider-bottom svg {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cover {
+        padding-bottom: 100px; /* Adjusted for mobile */
+    }
+    .custom-shape-divider-bottom svg {
+        height: 100px;
+    }
 }
