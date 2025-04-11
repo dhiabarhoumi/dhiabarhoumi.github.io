@@ -989,8 +989,26 @@ footer a:not(.nav-link) {
 }
 
 /* Thank You Page Styles */
+#thank-you {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.thank-you-wrapper {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
 .success-icon {
-    animation: scaleIn 0.5s ease-in-out;
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .success-icon i {
@@ -998,53 +1016,209 @@ footer a:not(.nav-link) {
     filter: drop-shadow(0 4px 6px rgba(40, 167, 69, 0.2));
 }
 
-.return-btn {
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
+.thank-you-message {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin: 0 auto;
+}
+
+.thank-you-suggestion {
+    color: #666;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-links .btn {
+    padding: 0.6rem 1.2rem;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.return-btn:hover {
+.social-links .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes scaleIn {
-    from {
+@keyframes bounceIn {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    to {
+    60% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
 
-#thank-you {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-}
-
-.thank-you-container {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 @media (max-width: 768px) {
-    .thank-you-container {
-        margin: 1rem;
-        padding: 1.5rem;
+    #thank-you {
+        padding: 1rem;
+        min-height: calc(100vh - 60px);
     }
     
-    .thank-you-title {
-        font-size: 2rem;
+    .thank-you-wrapper {
+        padding: 1.5rem;
+        margin-top: 0.5rem;
     }
     
     .thank-you-message {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
+    
+    .social-links {
+        flex-direction: column;
+    }
+    
+    .social-links .btn {
+        width: 100%;
+    }
+}
+
+/* Enhanced Thank You Page Animations */
+.fade-in-down {
+    opacity: 0;
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.slide-in {
+    opacity: 0;
+    animation: slideIn 0.8s ease forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Enhanced Button Animations */
+.btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Enhanced Success Icon Animation */
+.success-icon {
+    animation: successPop 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+@keyframes successPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-15deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(5deg);
+    }
+    70% {
+        transform: scale(0.9) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Enhanced Thank You Wrapper Animation */
+.thank-you-wrapper {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thank-you-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Links Enhanced Hover Effect */
+.social-links .btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.social-links .btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.1);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.social-links .btn:hover::after {
+    transform: scaleY(1);
 }
