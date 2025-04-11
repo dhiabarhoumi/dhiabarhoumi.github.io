@@ -22,7 +22,9 @@
   <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-  <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/skills.css">
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -240,282 +242,171 @@
       </div>
       <div class="section px-3 px-lg-4 pt-5" id="skills">
         <div class="container-narrow">
-          <div class="text-center mb-5">
+          <div class="skills-intro">
             <h2 class="marker marker-center">SKILLS</h2>
+            <p>With a <span class="highlight">knack for quick learning</span>, I focus on mastering many skills and technologies needed for <span class="highlight">Machine Learning</span>.</p>
           </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:600px; ">With a knack for quick learning, I focus on mastering many skills and technologies needed for Machine Learning.</p>
+          
+          <div class="skills-categories">
+            <button class="skill-tab active" data-category="languages">Languages</button>
+            <button class="skill-tab" data-category="frameworks">Frameworks</button>
+            <button class="skill-tab" data-category="libraries">Libraries</button>
+            <button class="skill-tab" data-category="tools">Tools</button>
+            <button class="skill-tab" data-category="cloud">Cloud</button>
           </div>
-          <!-- <div class="bg-light p-3">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">Python</span>
-                            <span class="badge bg-primary text-white">Advanced</span>
-                        </div>
-                    </div>
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">SQL</span>
-                            <span class="badge bg-primary text-white">Advanced</span>
-                        </div>
-                    </div>
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">C / C++</span>
-                            <span class="badge bg-primary text-white">Proficient</span>
-                        </div>
-                    </div>
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">Version Control (Git / GitHub)</span>
-                            <span class="badge bg-primary text-white">Proficient</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 offset-md-2">
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">Scikit-Learn</span>
-                            <span class="badge bg-primary text-white">Proficient</span>
-                        </div>
-                    </div>
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">TensorFlow</span>
-                            <span class="badge bg-warning text-dark">Skilled</span>
-                        </div>
-                    </div>
-                    
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">SpaCy, NLTK</span>
-                            <span class="badge bg-warning text-dark">Skilled</span>
-                        </div>
-                    </div>
-                    <div class="py-1">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <span class="skill-name">LangChain</span>
-                            <span class="badge bg-warning text-dark">Skilled</span>
-                        </div>
-                    </div>
-                </div>
+
+          <div class="skills-category active" id="languages">
+            <div class="skills-grid">
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/python.svg" alt="Python" class="skill-icon">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
               </div>
-            </div> 
-          </div> -->
-        </div>
-      </div>
-
-
-      <div class="section px-3 px-lg-4 pt-5" id="clients">
-        <div class="container-narrow" style="margin-top: -80px; margin-bottom: 5%">
-          <!-- <div class="text-center mb-5">
-            <h2 class="marker marker-center">CLIENTS & COLLABORATIONS</h2>
-          </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:600px">I have a proven track record of delivering high-quality data
-              engineering solutions for a diverse range of clients.</p>
-          </div> -->
-          <div class="row myrow" style="max-width:1200px" data-aos="fade" data-aos-delay="300">
-
-            <div class="myCarousel">
-              <div class="slider">
-                <div class="slide-track">
-                  <div class="slide">
-                    <img src="images/clients/gcloud.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/vertexai.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/bigquery.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/looker-icon.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/platform.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/python.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/tf.svg" height="80" width="80" alt="" />
-                  </div>
-
-                  <div class="slide">
-                    <img src="images/clients/langchain.png" height="80" width="80" alt="" />
-                  </div>
-
-                  <div class="slide">
-                    <img src="images/clients/lama.png" height="80" width="80" alt="" />
-                  </div>
-                  
-                  <!-- <div class="slide">
-                    <img src="images/clients/huggingface.svg" height="80" width="80" alt="" />
-                  </div> -->
-
-                  <div class="slide">
-                    <img src="images/clients/R.png" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/java.svg" height="80" width="80" alt="" />
-                  </div>
-                  <!-- <div class="slide">
-                    <img src="images/clients/C.png" height="80" width="80" alt="" />
-                  </div> -->
-                  <div class="slide">
-                    <img src="images/clients/cpp.svg" height="90" width="90" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/sb.webp" height="70" width="70" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/sql.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/oracle.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/pgres.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/git.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/docker.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/gcloud.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/vertexai.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/bigquery.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/looker-icon.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/platform.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/python.svg" height="80" width="80"alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/tf.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/langchain.png" height="80" width="80" alt="" />
-                  </div>
-
-                  <div class="slide">
-                    <img src="images/clients/lama.png" height="80" width="80" alt="" />
-                  </div>
-                  
-                  <!-- <div class="slide">
-                    <img src="images/clients/huggingface.svg" height="80" width="80" alt="" />
-                  </div> -->
-
-                  <div class="slide">
-                    <img src="images/clients/R.png" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/java.svg" height="80" width="80" alt="" />
-                  </div>
-                  <!-- <div class="slide">
-                    <img src="images/clients/C.png" height="80" width="80"alt="" />
-                  </div> -->
-                  <div class="slide">
-                    <img src="images/clients/cpp.svg" height="90" width="90" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/sb.webp" height="70" width="70" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/sql.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/oracle.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/pgres.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/git.svg" height="80" width="80" alt="" />
-                  </div>
-                  <div class="slide">
-                    <img src="images/clients/docker.svg" height="80" width="80" alt="" />
-                  </div>
-                  <!--
-          <div class="slide">
-          <img src="images/clients/" height="150" width="250" alt="" />
-          </div>
-          <div class="slide">
-          <img src="images/clients/" height="150" width="250" alt="" />
-          </div>
-          <div class="slide">
-          <img src="images/clients/" height="150" width="250" alt="" />
-          </div>
-          <div class="slide">
-          <img src="images/clients/" height="150" width="250" alt="" />
-          </div>
-          <div class="slide">
-          <img src="images/clients/" height="150" width="250" alt="" />
-          </div>
-          <div class="slide">
-          <img src="images/clients/" height="150" width="250" alt="" />
-          </div>
-          -->
-                </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/sql.svg" alt="SQL" class="skill-icon">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/cpp.svg" alt="C++" class="skill-icon">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/java.svg" alt="Java" class="skill-icon">
+                <span class="skill-name">Java</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/R.png" alt="R" class="skill-icon">
+                <span class="skill-name">R</span>
+                <span class="skill-level">Proficient</span>
               </div>
             </div>
-            <!--
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Aiyana</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Alexander</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Ariya</div>
-            <div class="text-small">Web Developer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client3.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Braiden</div>
-            <div class="text-small">Web Designer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-    </div>
-  -->
+          </div>
+
+          <div class="skills-category" id="frameworks">
+            <div class="skills-grid">
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/tensorflow-svgrepo-com.svg" alt="TensorFlow" class="skill-icon">
+                <span class="skill-name">TensorFlow</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/pytorch-svgrepo-com.svg" alt="PyTorch" class="skill-icon">
+                <span class="skill-name">PyTorch</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/scikitlearn-svgrepo-com.svg" alt="Scikit-learn" class="skill-icon">
+                <span class="skill-name">Scikit-learn</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/langchain.png" alt="LangChain" class="skill-icon">
+                <span class="skill-name">LangChain</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/huggingface.svg" alt="Hugging Face" class="skill-icon">
+                <span class="skill-name">Hugging Face</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" id="libraries">
+            <div class="skills-grid">
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/SpaCy_logo.svg.png" alt="SpaCy" class="skill-icon">
+                <span class="skill-name">SpaCy</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/nltk.png" alt="NLTK" class="skill-icon">
+                <span class="skill-name">NLTK</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/pandas.svg" alt="Pandas" class="skill-icon">
+                <span class="skill-name">Pandas</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/NumPy_logo_2020.svg.png" alt="NumPy" class="skill-icon">
+                <span class="skill-name">NumPy</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/OpenCV_Logo_with_text_svg_version.svg.png" alt="OpenCV" class="skill-icon">
+                <span class="skill-name">OpenCV</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" id="tools">
+            <div class="skills-grid">
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/git.svg" alt="Git" class="skill-icon">
+                <span class="skill-name">Git</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/docker.svg" alt="Docker" class="skill-icon">
+                <span class="skill-name">Docker</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/Kubernetes_logo.svg" alt="Kubernetes" class="skill-icon">
+                <span class="skill-name">Kubernetes</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/airflow.svg" alt="Airflow" class="skill-icon">
+                <span class="skill-name">Airflow</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/platform.svg" alt="MLflow" class="skill-icon">
+                <span class="skill-name">MLflow</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category" id="cloud">
+            <div class="skills-grid">
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/google-cloud.svg" alt="GCP" class="skill-icon">
+                <span class="skill-name">Google Cloud</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/azure-1-logo.svg" alt="Azure" class="skill-icon">
+                <span class="skill-name">Azure</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/vertexai.svg" alt="Vertex AI" class="skill-icon">
+                <span class="skill-name">Vertex AI</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Advanced">
+                <img src="images/clients/bigquery.svg" alt="BigQuery" class="skill-icon">
+                <span class="skill-name">BigQuery</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-item" data-tooltip="Proficient">
+                <img src="images/clients/looker-icon.svg" alt="Looker" class="skill-icon">
+                <span class="skill-name">Looker</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      
       <div class="section px-3 px-lg-4 pt-5" id="timeline" data-aos="fade-up" data-aos-delay="500">
         <div class="container-narrow">
             <div class="text-center mb-5">

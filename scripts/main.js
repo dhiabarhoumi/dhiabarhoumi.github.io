@@ -110,4 +110,40 @@
 
   window.addEventListener("scroll", callbackFunc);
 
+  // Skills Section Functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const skillTabs = document.querySelectorAll('.skill-tab');
+    const skillCategories = document.querySelectorAll('.skills-category');
+    const skillItems = document.querySelectorAll('.skill-item');
+
+    // Tab switching functionality
+    skillTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and categories
+        skillTabs.forEach(t => t.classList.remove('active'));
+        skillCategories.forEach(c => c.classList.remove('active'));
+        
+        // Add active class to clicked tab and corresponding category
+        tab.classList.add('active');
+        const categoryId = tab.getAttribute('data-category');
+        document.getElementById(categoryId).classList.add('active');
+      });
+    });
+
+    // Intersection Observer for skill items animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    skillItems.forEach(item => {
+      observer.observe(item);
+    });
+  });
+
 })();

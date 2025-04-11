@@ -435,10 +435,19 @@ footer a:not(.nav-link) {
 }
 
 .myCarousel {
-  max-width: 1200px;
-  width: 100%;
-  height: 100%;
+  display: none;
+}
 
+.slider {
+  display: none;
+}
+
+.slide-track {
+  display: none;
+}
+
+.slide {
+  display: none;
 }
 
 @media (min-width: 1260px) { /* Target screens with a width of 767px or more */
