@@ -987,3 +987,64 @@ footer a:not(.nav-link) {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Thank You Page Styles */
+.success-icon {
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+.success-icon i {
+    color: #28a745;
+    filter: drop-shadow(0 4px 6px rgba(40, 167, 69, 0.2));
+}
+
+.return-btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.return-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#thank-you {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.thank-you-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .thank-you-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .thank-you-title {
+        font-size: 2rem;
+    }
+    
+    .thank-you-message {
+        font-size: 1.1rem;
+    }
+}
