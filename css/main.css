@@ -48,10 +48,12 @@ a.aboutme-b:hover {
 }
 /* Zoom effect on the specified part of the About Me section */
 .col-md-6:hover {
-  transform: scale(1.02); /* Adjust the scale factor as needed */
+  transform: scale(1.02);
   background-color: var(--hover-light);
-  transition: background-color 0.7s ease 0.15s, transform 0.7s ease-in-out; /* Delay background-color transition and add transform transition */
+  transition: background-color 0.7s ease 0.15s, transform 0.7s ease-in-out;
 }
+
+/* Remove certification tooltip styles */
 .certification-tooltip {
   position: relative;
   display: inline-block;
@@ -59,23 +61,11 @@ a.aboutme-b:hover {
 }
 
 .certification-tooltip .tooltiptext {
-  visibility: hidden;
-  width: 150px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.7s;
-  bottom: 125%; /* Position the tooltip above the link */
-  left: 50%;
-  transform: translateX(-50%);
+  display: none;  /* Hide the tooltip completely */
 }
 
 .certification-tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+  display: none;  /* Ensure tooltip stays hidden on hover */
 }
 
 .university-tooltip {
@@ -1457,7 +1447,20 @@ header.bg-light {
 .thank-you-wrapper {
   background-color: var(--bg-block);
   box-shadow: 0 4px 8px var(--shadow-color);
-  border: 1px solid rgba(74, 95, 233, 0.08);  /* Subtle border for definition */
+  border: 1px solid rgba(74, 95, 233, 0.08);
+}
+
+/* Special style for Google Cloud logo */
+.skill-item[data-skill="google-cloud"] {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.skill-item[data-skill="google-cloud"]:hover {
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateY(-5px);
 }
 
 .skill-item:hover,
@@ -1466,7 +1469,7 @@ header.bg-light {
 .thank-you-wrapper:hover {
   background-color: var(--hover-light);
   box-shadow: 0 8px 16px var(--shadow-color);
-  border-color: rgba(74, 95, 233, 0.12);  /* Slightly darker border on hover */
+  border-color: rgba(74, 95, 233, 0.12);
 }
 
 /* Text colors */
