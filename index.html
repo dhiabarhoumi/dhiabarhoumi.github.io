@@ -771,108 +771,136 @@
     </div>
   </div>
 
-      
-        </div>
-    </div>
-    
-    
-    
-      
-    
-      <footer class="footer bg-light">
-        <div class="container">
-          <div class="footer-content">
-            <h3 class="footer-title">Dhieddine BARHOUMI</h3>
-            <p class="footer-subtitle">Machine Learning Engineer</p>
-            <div class="footer-social">
-              <ul class="social-list">
-                <li class="social-item">
-                  <a href="https://www.linkedin.com/in/barhoumi-dhieddine/" title="LinkedIn" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="https://github.com/dhiabarhoumi" title="GitHub" target="_blank">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-                <li class="social-item">
-                  <a href="mailto:dhieddine.barhoumi@insat.ucar.tn" title="Email" target="_blank">
-                    <i class="fas fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
+  <div class="section px-3 px-lg-4 pt-5" id="contact" data-aos="fade-up" data-aos-delay="500">
+    <div class="container-narrow">
+      <div class="text-center mb-5">
+        <h2 class="marker marker-center">CONTACT ME</h2>
+      </div>
+      <div class="text-center">
+        <p class="mx-auto mb-3" style="max-width:650px">
+          Have a question or want to work together? Feel free to reach out!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="https://formsubmit.co/dhieddine.barhoumi@gmail.com" method="POST" class="contact-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://dhiabarhoumi.github.io/thankyou.html">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" placeholder="Your Name" required>
             </div>
-            <div class="footer-copyright">
-              <p>&copy; Dhieddine BARHOUMI, All rights reserved 2024</p>
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required>
             </div>
-          </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
         </div>
-      </footer>
+      </div>
     </div>
   </div>
-  <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i
-          class="fas fa-angle-up fa-x"></i></span></a></div>
-  <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
-  <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
-  <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
-  <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
-  <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-  <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-  <script src="./scripts/main.js?ver=1.2.0"></script>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      // Function to calculate text width
-      function getTextWidth(element) {
-          // Create a temporary span with the same styling
-          const temp = document.createElement('span');
-          temp.style.visibility = 'hidden';
-          temp.style.whiteSpace = 'nowrap';
-          temp.style.position = 'absolute';
-          temp.style.font = window.getComputedStyle(element).font;
-          temp.textContent = element.textContent;
-          document.body.appendChild(temp);
-          
-          const width = temp.offsetWidth;
-          document.body.removeChild(temp);
-          return width;
-      }
 
-      // Function to start typing animation sequence
-      function startTypingAnimation() {
-          const containers = [
-              document.getElementById('text1'),
-              document.getElementById('text2'),
-              document.getElementById('text3'),
-              document.getElementById('text4')
-          ];
-          
-          const delays = [0, 800, 1600, 2400];
-          const typingDuration = 800;
-          
-          containers.forEach((container, index) => {
-              const typingElement = container.querySelector('.typing-text');
-              const textWidth = getTextWidth(typingElement);
-              
-              // Set the custom property for the text width
-              typingElement.style.setProperty('--text-width', `${textWidth}px`);
-              
-              setTimeout(() => {
-                  container.classList.add('visible');
-                  typingElement.classList.add('typing');
-                  
-                  // Add typing-complete class when animation ends
-                  setTimeout(() => {
-                      typingElement.classList.add('typing-complete');
-                  }, typingDuration);
-              }, delays[index]);
-          });
-      }
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="footer-content">
+        <h3 class="footer-title">Dhieddine BARHOUMI</h3>
+        <p class="footer-subtitle">Machine Learning Engineer</p>
+        <div class="footer-social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/barhoumi-dhieddine/" title="LinkedIn" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/dhiabarhoumi" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="mailto:dhieddine.barhoumi@insat.ucar.tn" title="Email" target="_blank">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; Dhieddine BARHOUMI, All rights reserved 2024</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
 
-      // Start the animation sequence
-      startTypingAnimation();
-  });
-  </script>
+<div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i
+        class="fas fa-angle-up fa-x"></i></span></a></div>
+<script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+<script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+<script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+<script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+<script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+<script src="./scripts/aos.min.js?ver=1.2.0"></script>
+<script src="./scripts/main.js?ver=1.2.0"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to calculate text width
+    function getTextWidth(element) {
+        // Create a temporary span with the same styling
+        const temp = document.createElement('span');
+        temp.style.visibility = 'hidden';
+        temp.style.whiteSpace = 'nowrap';
+        temp.style.position = 'absolute';
+        temp.style.font = window.getComputedStyle(element).font;
+        temp.textContent = element.textContent;
+        document.body.appendChild(temp);
+        
+        const width = temp.offsetWidth;
+        document.body.removeChild(temp);
+        return width;
+    }
+
+    // Function to start typing animation sequence
+    function startTypingAnimation() {
+        const containers = [
+            document.getElementById('text1'),
+            document.getElementById('text2'),
+            document.getElementById('text3'),
+            document.getElementById('text4')
+        ];
+        
+        const delays = [0, 800, 1600, 2400];
+        const typingDuration = 800;
+        
+        containers.forEach((container, index) => {
+            const typingElement = container.querySelector('.typing-text');
+            const textWidth = getTextWidth(typingElement);
+            
+            // Set the custom property for the text width
+            typingElement.style.setProperty('--text-width', `${textWidth}px`);
+            
+            setTimeout(() => {
+                container.classList.add('visible');
+                typingElement.classList.add('typing');
+                
+                // Add typing-complete class when animation ends
+                setTimeout(() => {
+                    typingElement.classList.add('typing-complete');
+                }, typingDuration);
+            }, delays[index]);
+        });
+    }
+
+    // Start the animation sequence
+    startTypingAnimation();
+});
+</script>
 </body>
 
 </html>
