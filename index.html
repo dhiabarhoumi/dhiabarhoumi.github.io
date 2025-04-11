@@ -784,45 +784,18 @@
       <div class="row">
         <div class="col-md-6 mx-auto">
           <form action="https://formsubmit.co/dhieddine.barhoumi@gmail.com" method="POST" class="contact-form">
+            <!-- FormSubmit Configuration -->
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://dhiabarhoumi.github.io/thankyou.html">
-            <!-- Spam Protection -->
-            <input type="text" name="_honey" style="display: none">
-            <!-- Email Template Configuration -->
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_subject" value="🎯 New Portfolio Contact Message">
-            <!-- Custom HTML Email Template -->
-            <input type="hidden" name="_email-template" value="
-              <div style='background-color: #f8f9fa; padding: 20px; font-family: Arial, sans-serif;'>
-                <div style='background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);'>
-                  <h2 style='color: #007bff; margin-bottom: 20px; text-align: center;'>New Contact Form Submission</h2>
-                  <div style='margin-bottom: 15px;'>
-                    <strong style='color: #333;'>From:</strong>
-                    <p style='margin: 5px 0; color: #666;'>{First Name}</p>
-                  </div>
-                  <div style='margin-bottom: 15px;'>
-                    <strong style='color: #333;'>Email:</strong>
-                    <p style='margin: 5px 0; color: #666;'>{Email Address}</p>
-                  </div>
-                  <div style='margin-bottom: 15px;'>
-                    <strong style='color: #333;'>Subject:</strong>
-                    <p style='margin: 5px 0; color: #666;'>{Subject}</p>
-                  </div>
-                  <div style='margin-bottom: 15px;'>
-                    <strong style='color: #333;'>Message:</strong>
-                    <p style='margin: 5px 0; color: #666;'>{Message}</p>
-                  </div>
-                  <div style='text-align: center; margin-top: 20px; font-size: 12px; color: #999;'>
-                    Sent from your portfolio contact form
-                  </div>
-                </div>
-              </div>">
+            <input type="hidden" name="_subject" value="📨 New Contact Form Message">
+            
             <!-- Form Fields -->
             <div class="mb-3">
-              <input type="text" class="form-control" name="First Name" placeholder="Your Name" required>
+              <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" name="Email Address" placeholder="Your Email" required>
+              <input type="email" class="form-control" name="Email" placeholder="Your Email" required>
             </div>
             <div class="mb-3">
               <input type="text" class="form-control" name="Subject" placeholder="Subject" required>
