@@ -1532,3 +1532,123 @@ header.bg-light {
 .section:nth-child(odd) {
   background-color: var(--bg-light);
 }
+
+/* Social Media Icons and Resume Button Container */
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icons .nav-item {
+  margin: 0;
+}
+
+.social-icons .nav-link {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+.social-icons .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.download-resume {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInButton 0.5s ease forwards;
+  animation-delay: 3.8s; /* Starts after the last social icon animation */
+}
+
+.download-resume:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .social-links-container {
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
+
+  .social-icons {
+    gap: 1.5rem;
+  }
+
+  .social-icons .nav-link {
+    font-size: 1.75rem;
+  }
+
+  .download-resume {
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Social Icons Animation */
+.social-icons .nav-item {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.social-icons .nav-item:nth-child(1) {
+  animation: fadeInIcon 0.5s ease forwards;
+  animation-delay: 3.2s;
+}
+
+.social-icons .nav-item:nth-child(2) {
+  animation: fadeInIcon 0.5s ease forwards;
+  animation-delay: 3.4s;
+}
+
+.social-icons .nav-item:nth-child(3) {
+  animation: fadeInIcon 0.5s ease forwards;
+  animation-delay: 3.6s;
+}
+
+@keyframes fadeInIcon {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-icons .nav-item:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
