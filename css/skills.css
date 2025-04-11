@@ -22,19 +22,19 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
-    color: #333;
+    color: var(--text-dark);
 }
 
 .skills-intro p {
     font-size: 1.1rem;
-    color: #666;
+    color: var(--text-light);
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
 .skills-intro .highlight {
-    color: #486e83;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -51,7 +51,7 @@
     padding: 0.75rem 1.5rem;
     border: none;
     background: transparent;
-    color: #666;
+    color: var(--text-light);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -61,12 +61,12 @@
 }
 
 .skill-tab:hover {
-    color: #486e83;
+    color: var(--primary-color);
 }
 
 .skill-tab.active {
-    color: #486e83;
-    background-color: rgba(72, 110, 131, 0.1);
+    color: var(--primary-color);
+    background-color: var(--hover-light);
 }
 
 .skill-tab.active::after {
@@ -77,7 +77,7 @@
     transform: translateX(-50%);
     width: 30px;
     height: 3px;
-    background-color: #486e83;
+    background-color: var(--primary-color);
     border-radius: 3px;
 }
 
@@ -102,7 +102,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1.5rem;
-    background: #fff;
+    background: var(--bg-white);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
@@ -113,6 +113,7 @@
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--hover-light);
 }
 
 .skill-icon {
@@ -129,14 +130,14 @@
 .skill-name {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #333;
+    color: var(--text-dark);
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
 .skill-level {
     font-size: 0.8rem;
-    color: #666;
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -148,7 +149,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 1rem;
-    background-color: #486e83;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 4px;
     font-size: 0.8rem;
