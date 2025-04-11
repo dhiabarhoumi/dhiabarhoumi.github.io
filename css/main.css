@@ -853,17 +853,17 @@ footer a:not(.nav-link) {
 /* Individual social icon animations */
 .social-nav .nav-link:nth-child(1) {
   animation: fadeInIcon 0.5s ease forwards;
-  animation-delay: 5s; /* After typing ends */
+  animation-delay: 3.2s; /* After typing ends */
 }
 
 .social-nav li:nth-child(2) .nav-link {
   animation: fadeInIcon 0.5s ease forwards;
-  animation-delay: 5.2s; /* 0.2s after first icon */
+  animation-delay: 3.4s; /* 0.2s after first icon */
 }
 
 .social-nav li:nth-child(3) .nav-link {
   animation: fadeInIcon 0.5s ease forwards;
-  animation-delay: 5.4s; /* 0.2s after second icon */
+  animation-delay: 3.6s; /* 0.2s after second icon */
 }
 
 @keyframes fadeInIcon {
@@ -898,7 +898,7 @@ footer a:not(.nav-link) {
   opacity: 0;
   transform: translateY(10px);
   animation: fadeInButton 0.5s ease forwards;
-  animation-delay: 5.8s;
+  animation-delay: 3.8s;
   margin-left: 210px; /* Match the social icons new margin */
   margin-top: 0px; /* Reduced from 5px to bring closer to icons */
 }
