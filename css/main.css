@@ -323,7 +323,7 @@ footer a:not(.nav-link) {
 
 .marker-center {
   padding: 0;
-  
+  margin-bottom: 0.5rem;
 }
 
 /* .marker:after {
@@ -958,6 +958,13 @@ footer a:not(.nav-link) {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem; /* Match the spacing */
+}
+
+#contact {
+  padding-top: 20px; /* Drastically reduced from 60px */
+  margin-top: -20px; /* Adjusted to match new padding */
+  scroll-margin-top: 20px;
 }
 
 .contact-form .form-control {
@@ -965,6 +972,7 @@ footer a:not(.nav-link) {
   border-radius: 4px;
   padding: 0.75rem;
   transition: border-color 0.3s ease;
+  margin-bottom: 1rem; /* Add space between form elements */
 }
 
 .contact-form .form-control:focus {
@@ -975,17 +983,32 @@ footer a:not(.nav-link) {
 .contact-form textarea.form-control {
   min-height: 150px;
   resize: vertical;
+  margin-bottom: 1.5rem; /* Add more space after textarea */
 }
 
 .contact-form .btn-primary {
   padding: 0.75rem 2rem;
   font-weight: 600;
   transition: all 0.3s ease;
+  margin-top: 1rem; /* Add space above button */
 }
 
-.contact-form .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Add spacing for the contact section heading and description */
+#contact .text-center {
+  margin-bottom: 0.5rem; /* Match the spacing */
+}
+
+#contact .text-center h2 {
+  margin-bottom: 0.5rem; /* Match the spacing */
+}
+
+#contact .text-center p {
+  margin-bottom: 0.5rem; /* Match the spacing */
+}
+
+#contact .container-narrow {
+  padding-top: 0;
+  padding-bottom: 3rem;
 }
 
 /* Thank You Page Styles */

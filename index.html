@@ -30,6 +30,21 @@
         transform: translate(0) scale(1) !important;
       }
     </style>
+    
+    <!-- Update scroll padding styles -->
+    <style>
+      html {
+        scroll-padding-top: 100px;
+      }
+      
+      #projects, #certificates, #timeline {
+        scroll-margin-top: 100px;
+      }
+
+      .section {
+        position: relative;
+      }
+    </style>
   </noscript>
 </head>
 
@@ -52,7 +67,7 @@
             <li class="nav-item"><a class="nav-link" href="#timeline">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </div>
@@ -906,6 +921,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start the animation sequence
     startTypingAnimation();
+
+    // Add smooth scrolling with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const headerOffset = 100;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });
 </script>
 </body>
