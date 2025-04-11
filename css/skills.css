@@ -9,10 +9,19 @@
     margin-bottom: 3rem;
 }
 
+.marker-center {
+    margin-bottom: 3rem;
+}
+
+.intro-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .skills-intro h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     color: #333;
 }
 
@@ -21,6 +30,7 @@
     color: #666;
     max-width: 600px;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
 .skills-intro .highlight {
