@@ -1,0 +1,16 @@
+{
+  "name": "Dhieddine BARHOUMI - Machine Learning Engineer",
+  "short_name": "Dhieddine BARHOUMI",
+  "description": "Professional portfolio of Dhieddine BARHOUMI, Machine Learning Engineer and MLOps Specialist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+} 
