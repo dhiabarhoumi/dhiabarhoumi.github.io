@@ -166,7 +166,7 @@
                       <h1 class="intro-title marker typing-text typing-delay-2" style="margin-top: 20px;">I'm Dhieddine BARHOUMI</h1>
                     </div>
                     <div class="typing-container" id="text3">
-                      <p class="lead fw-normal typing-text typing-delay-3" style="margin-top: 20px;">-Machine Learning Engineer</p>
+                      <p class="lead fw-normal typing-text typing-delay-3" style="margin-top: 20px;">-AI/Data Engineer</p>
                     </div>
                     <div class="typing-container" id="text4">
                       <p class="lead fw-normal typing-text typing-delay-4" style="margin-top: 20px;">-MLOps Enthusiast</p>
@@ -194,9 +194,6 @@
                         </a>
                       </li>
                     </ul>
-                    <a href="resume/Resume_Dhieddine_BARHOUMI.pdf" class="download-resume" target="_blank" rel="noopener noreferrer" aria-label="Download my resume">
-                      Download Resume
-                    </a>
                   </div>
                 </div>
               </div>
@@ -562,27 +559,178 @@
             <div class="timeline">
             <div class="experience left">
               <div class="content">
-                  <div class="date_container">October 2024 - November 2024</div>
+                  <div class="date_container">January 2025 - February 2025</div>
                   <div class="role">
-                    AI-Powered Loan Approval System
-                      <a href="https://github.com/dhiabarhoumi/Loanapproval" target="_blank" class="github-icon">
+                    K8s Model Serving & CICD Playbook
+                      <a href="https://github.com/dhiabarhoumi/k8s-model-serving-playbook" target="_blank" class="github-icon">
                           <i class="fab fa-github fa-s"></i>
                       </a>
                     </div>
                   <p class="project-type">Personal Project</p>
                   <ul>
-                      <li>Developed a scalable machine learning application for real-time loan approval decisions.</li>
-                      <li>Designed and deployed an end-to-end pipeline including data ingestion, transformation, and model training with hyperparameter tuning and grid search.</li>
-                      <li>Implemented custom utilities, logging, and exception handling for efficient debugging and streamlined operations.</li>
-                      <li>Built a Flask-based backend with a responsive frontend using HTML and Bootstrap for user interaction.</li>
-                      <li>Automated CI/CD processes with GitHub Actions, ensuring seamless integration and deployment to Azure Web App Service.</li>
-                      <li>Dockerized the application and hosted it on Azure Container Registry for scalable cloud deployment.</li>
+                      <li>Developed a robust Kubernetes-based model serving solution designed to host multiple ML model types, including embeddings, generative text, and classical ML.</li>
+                      <li>Implemented an API gateway using FastAPI to route incoming requests to various backend model servers like NVIDIA Triton, Text Generation Inference (TGI), and custom Python servers.</li>
+                      <li>Configured advanced deployment strategies, including blue/green and canary releases, to ensure safe and zero-downtime model updates.</li>
+                      <li>Integrated Evidently AI to generate automated data drift and model performance reports from captured production traffic.</li>
+                      <li>Established a CI/CD pipeline to automate the building of model containers, configuration of Kubernetes resources, and execution of contract tests.</li>
                   </ul>
               </div>
           </div>
           <div class="experience right">
             <div class="content">
-                <div class="date_container">September 2023 - December 2023</div>
+                <div class="date_container">December 2024 - January 2025</div>
+                <div class="role">
+                  Real-Time Feature Store & Online Serving
+                    <a href="https://github.com/dhiabarhoumi/realtime-feature-store-serving" target="_blank" class="github-icon">
+                        <i class="fab fa-github fa-s"></i>
+                    </a>
+                  </div>
+                <p class="project-type">Personal Project</p>
+                <ul>
+                    <li>Built a real-time feature store and online serving system to provide low-latency features for recommender and risk models, achieving sub-5ms feature lookups.</li>
+                    <li>Engineered a streaming feature pipeline using Spark Structured Streaming to compute aggregations from a Kafka event stream, ensuring data freshness.</li>
+                    <li>Managed features using Feast, which orchestrates data flows into an offline store (Parquet) for model training and an online store (Redis) for serving.</li>
+                    <li>Guaranteed training-serving parity by using Feast to generate point-in-time correct training datasets and to enrich inference requests at serving time.</li>
+                    <li>Deployed a high-performance online inference service with FastAPI, integrating Feast's middleware for real-time feature retrieval.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experience left">
+          <div class="content">
+              <div class="date_container">October 2024 - November 2024</div>
+              <div class="role">
+                Enterprise ML Pipeline on Google Cloud
+                  <a href="https://github.com/dhiabarhoumi/enterprise-ml-pipeline-gcp" target="_blank" class="github-icon">
+                      <i class="fab fa-github fa-s"></i>
+                  </a>
+                </div>
+              <p class="project-type">Personal Project</p>
+              <ul>
+                  <li>Architected a production-grade, end-to-end ML pipeline on Google Cloud, automating the entire workflow from data ingestion and validation to model training and deployment.</li>
+                  <li>Orchestrated the pipeline using Vertex AI and TensorFlow Extended (TFX), ensuring reproducible and scalable execution for components like ExampleGen, Transform, and Trainer.</li>
+                  <li>Integrated BigQuery for efficient data warehousing and TensorFlow Data Validation (TFDV) for automated data quality and schema enforcement.</li>
+                  <li>Developed a containerized REST API using Flask and Docker, deployed on Cloud Run for scalable, serverless model serving.</li>
+                  <li>Established a full CI/CD workflow with GitHub Actions to automate testing, container image pushes to Artifact Registry, and deployments to Cloud Run.</li>
+              </ul>
+          </div>
+      </div>
+      <div class="experience right">
+        <div class="content">
+            <div class="date_container">September 2024 - October 2024</div>
+            <div class="role">
+              Loan Approval Decision Support
+                <a href="https://github.com/dhiabarhoumi/loan-approval-system" target="_blank" class="github-icon">
+                    <i class="fab fa-github fa-s"></i>
+                </a>
+              </div>
+            <p class="project-type">Personal Project</p>
+            <ul>
+                <li>Developed a full-stack machine learning application to predict loan approval status, deployed as a web service on Microsoft Azure.</li>
+                <li>Constructed an end-to-end prediction pipeline using Scikit-learn, encompassing data ingestion, feature transformation, and model inference.</li>
+                <li>Built a user-facing web interface with Flask and HTML/Bootstrap to capture input data and display model predictions in real-time.</li>
+                <li>Implemented a complete CI/CD pipeline using GitHub Actions to automatically build, test, and deploy the containerized application to Azure Web App services.</li>
+                <li>Engineered robust backend utilities, including custom exception handling and structured logging, to ensure application stability and maintainability.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="experience left">
+      <div class="content">
+          <div class="date_container">May 2024 - June 2024</div>
+          <div class="role">
+            Universal Knowledge RAG & Agent
+              <a href="https://github.com/dhiabarhoumi/universal-rag-agent" target="_blank" class="github-icon">
+                  <i class="fab fa-github fa-s"></i>
+              </a>
+            </div>
+          <p class="project-type">Personal Project</p>
+          <ul>
+              <li>Developed a sophisticated Retrieval-Augmented Generation (RAG) system capable of answering questions from a private knowledge base, combining document retrieval with LLM-powered synthesis.</li>
+              <li>Built a scalable and modular API using FastAPI, allowing for easy integration and interaction with both the RAG pipeline and an autonomous agent.</li>
+              <li>Integrated multiple vector database backends, including pgvector for persistent storage and FAISS for high-speed in-memory search, providing flexibility in deployment.</li>
+              <li>Implemented a rigorous evaluation framework using RAGAS to quantitatively measure retrieval and generation quality, ensuring the system's accuracy and relevance.</li>
+              <li>Incorporated LLM guardrails to enforce output constraints, prevent harmful or off-topic responses, and ensure the agent's actions remain within a predefined scope.</li>
+          </ul>
+      </div>
+  </div>
+  <div class="experience right">
+    <div class="content">
+        <div class="date_container">March 2024 - April 2024</div>
+        <div class="role">
+          Time-Series Forecasting & Anomaly Lab
+            <a href="https://github.com/dhiabarhoumi/ts-forecasting-anomaly-lab" target="_blank" class="github-icon">
+                <i class="fab fa-github fa-s"></i>
+            </a>
+          </div>
+        <p class="project-type">Personal Project</p>
+        <ul>
+            <li>Created a configurable forecasting laboratory for training, evaluating, and analyzing multiple time-series models, including LightGBM, Prophet, and a TensorFlow-based Temporal Fusion Transformer (TFT).</li>
+            <li>Designed a unified pipeline that handles feature engineering, backtesting, and hierarchical reconciliation for thousands of independent time series.</li>
+            <li>Automated model evaluation and comparison using MLflow for experiment tracking and artifact storage.</li>
+            <li>Implemented post-training analysis workflows to generate drift reports with Evidently AI and detect anomalies in forecast residuals.</li>
+            <li>Structured the project with a configuration-driven approach, allowing for easy adaptation to new datasets and forecasting scenarios without code changes.</li>
+        </ul>
+    </div>
+</div>
+<div class="experience left">
+  <div class="content">
+      <div class="date_container">January 2024 - February 2024</div>
+      <div class="role">
+        Unstructured Intelligence Platform on GCP
+          <a href="https://github.com/dhiabarhoumi/unstructured-intel-gcp" target="_blank" class="github-icon">
+              <i class="fab fa-github fa-s"></i>
+          </a>
+        </div>
+      <p class="project-type">Personal Project</p>
+      <ul>
+          <li>Engineered a scalable data platform on GCP to ingest, process, and index unstructured text from public datasets like Hacker News, Wikipedia, and GitHub.</li>
+          <li>Designed a multi-stage ETL pipeline using a Bronze-Silver-Gold architecture on Google Cloud Storage, orchestrated daily with Cloud Composer (Airflow).</li>
+          <li>Implemented distributed data processing and embedding generation jobs with PySpark on Dataproc Serverless, using Sentence Transformers to create vector embeddings.</li>
+          <li>Built a low-latency semantic search service using FAISS for vector indexing and a FastAPI application deployed on Cloud Run.</li>
+          <li>Integrated Great Expectations for automated data quality validation and contract enforcement at critical stages of the data pipeline.</li>
+      </ul>
+  </div>
+</div>
+<div class="experience right">
+  <div class="content">
+      <div class="date_container">December 2023 - January 2024</div>
+      <div class="role">
+        Lakehouse Data Products Starter Kit
+          <a href="https://github.com/dhiabarhoumi/lakehouse-data-products-starter" target="_blank" class="github-icon">
+              <i class="fab fa-github fa-s"></i>
+          </a>
+        </div>
+      <p class="project-type">Personal Project</p>
+      <ul>
+          <li>Developed a production-ready starter kit for building a lakehouse platform that transforms raw data into governed, high-quality data products.</li>
+          <li>Implemented a multi-layered data architecture (Bronze, Silver, Gold) using dbt for SQL-based transformations and schema modeling.</li>
+          <li>Enforced data quality and reliability by defining data contracts directly within dbt models and integrating Great Expectations for automated validation.</li>
+          <li>Generated comprehensive documentation and data lineage graphs automatically through dbt Docs, providing full visibility into data flows.</li>
+          <li>Established a CI/CD pipeline that runs data loading scripts, executes dbt transformations, and validates data quality on every commit.</li>
+      </ul>
+  </div>
+</div>
+<div class="experience left">
+  <div class="content">
+      <div class="date_container">September 2023 - November 2023</div>
+      <div class="role">
+        Real-time E-commerce Analytics
+          <a href="https://github.com/dhiabarhoumi/realtime-ecommerce-analytics" target="_blank" class="github-icon">
+              <i class="fab fa-github fa-s"></i>
+          </a>
+        </div>
+      <p class="project-type">Personal Project</p>
+      <ul>
+          <li>Designed a high-throughput streaming analytics platform to process and visualize e-commerce clickstream data with sub-second latency.</li>
+          <li>Architected a data pipeline using Kafka for event ingestion and Spark Structured Streaming for real-time aggregations, sessionization, and KPI calculation.</li>
+          <li>Utilized a dual-storage strategy, writing aggregated results to MongoDB for low-latency dashboard queries and raw events to Parquet on cold storage for historical analysis.</li>
+          <li>Developed an interactive, auto-refreshing dashboard with Streamlit to display live conversion funnels, revenue metrics, and anomaly alerts.</li>
+          <li>Exposed analytics data via a REST API built with FastAPI, enabling programmatic access to real-time and historical KPIs.</li>
+      </ul>
+  </div>
+</div>
+          <div class="experience right">
+            <div class="content">
+                <div class="date_container">August 2023 - September 2023</div>
                 <div class="role">Autonomous Robot Navigation using Deep Reinforcement Learning</div>
                 <p class="project-type">Academic Project</p>
                 <ul>
@@ -742,7 +890,7 @@
     <div class="container">
       <div class="footer-content">
         <h3 class="footer-title">Dhieddine BARHOUMI</h3>
-        <p class="footer-subtitle">Machine Learning Engineer</p>
+        <p class="footer-subtitle">AI/Data Engineer</p>
         <div class="footer-social">
           <ul class="social-list">
             <li class="social-item">
